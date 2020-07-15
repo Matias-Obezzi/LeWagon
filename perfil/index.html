@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-body">
+    <div class="banner shadow"></div>
+    <div class="container profile mb-5">
+        <div class="profile-card bg-light p-5 rounded shadow">
+            <div class="row mx-0">
+                <div class="col-12 order-3 order-md-1 col-md-4 px-0">
+                    <div class="px-0 mx-0 rounded">
+                        <div class="row mx-0 my-2">
+                            <div class="col text-center">
+                                <p class="my-0">Followers:</p>
+                                <p class="font-weight-bold text-center mx-auto my-0"><i class="fas fa-user-friends mr-2"></i><span id="followers"></span></p>
+                            </div>
+                            <div class="col text-center">
+                                <p class="my-0 mx-auto">Follows:</p>
+                                <p class="font-weight-bold text-center mx-auto my-0" id="follows"><i class="fas fa-users mr-2"></i><span id="follows"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-1 order-md-2 col-md-4 px-0">
+                    <img class="d-block mx-auto rounded-circle img-fluid img-profile" id="img-profile" src="" />
+                </div>
+                <div class="col-12 order-4 order-md-3 col-md-4 px-0">
+                    <div class="px-0 mx-0 rounded">
+                        <div class="row mx-0 my-2">
+                            <button id="buttonFollow" class="btn btn-outline-light text-dark col mx-2 my-auto align-middle px-0" onclick="buttonFollow()">
+                                <i class="fas fa-user-plus"></i> Follow
+                                <!-- <i class="fas fa-user-times"></i> Unfollow -->
+                            </button>
+                            <button class="btn btn-outline-light text-dark col mx-2 my-auto align-middle px-0" data-toggle="modal" data-target="#message">
+                                <i class="fas fa-comments"></i> Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center order-2 order-md-4">
+                    <h2 class="font-weight-bold" id="name-profile"></h2>
+                    <p id="byo-profile" class="my-0"></p>
+                </div>
+                <hr class="w-50 mx-auto d-block order-5 my-3">
+                <div id="publish" class="order-5 row col-12 mx-auto">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="message" tabindex="-1" data-backdrop="static" aria-labelledby="messageLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="messageLabel">New message to </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" minlength="0" maxlength="200" oninput="messageLength()"></textarea>
+                            <small class="text-right ml-auto float-right"><span id="length">0</span>/200</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show fixed-top d-none ml-auto my-3 mr-3" role="alert" id="alert">
+            <span id="alert-message"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="text-muted text-center">Made with ❤ by <a href="https://github.com/Matias-Obezzi" target="_blank" class="link">Matías Obezzi</a></a></p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

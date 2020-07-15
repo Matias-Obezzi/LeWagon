@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700;900&display=swap');
+*{
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.link{
+    color: unset;
+}
+
+.link:hover{
+    color: black;
+}
+
+.btn:hover{
+    transition: 0.2s all;
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+}
+
+.bg-body{
+    background: #f8f9fa;
+}
+
+.img-profile{
+    border: 5px solid #f8f9fa;
+    margin-top: -10rem;
+    transition: 0.5s all;
+}
+
+.img-profile:hover{
+    transition: 0.5s all;
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+}
+
+.profile-card{
+    margin-top:-20rem;
+    position: relative;
+}
+
+.banner{
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: url("https://source.unsplash.com/collection/8994315/1080x1080");
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;  
+    clip-path: ellipse(100% 80% at 50% 0%);
+}
+
+.img-pub{
+    cursor: pointer;
+}
+
+@media(min-width:992px){
+    .pub-container > .details{
+        display: none;
+        position: relative;
+        margin-top: -50%;
+        font-size: 25px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    .pub-container:hover > .img-pub{
+        transition: 0.2s all;
+        filter: blur(1px) brightness(0.5);
+        transform: scale(0.99);
+    }
+    .pub-container:hover > .details{
+        transition: 0.2s all;
+        display:block;
+    }
+}
+
+@media(max-width:991px){
+    .pub-container > .details{
+        background: rgba(0,0,0,0.75);
+        display: block;
+        position: relative;
+        margin-top: -1.3rem;
+        font-size: 15px;
+        z-index: 1000;
+        cursor: pointer;
+        border-bottom-left-radius: .25rem!important;
+        border-bottom-right-radius: .25rem!important;
+    }
+}
