@@ -41,7 +41,8 @@
 
 .author{
     position: absolute;
-    margin-top: -8rem;
+    /* margin-top: -8rem; */
+    margin-top: -45%;
     margin-left: 1.5rem;
 }
 
