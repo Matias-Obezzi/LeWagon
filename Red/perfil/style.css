@@ -28,6 +28,7 @@
     border: 5px solid #f8f9fa;
     margin-top: -10rem;
     transition: 0.5s all;
+    min-width: 232px;
 }
 
 .img-profile:hover{
@@ -63,6 +64,10 @@
     cursor: pointer;
 }
 
+.pub-container{
+    cursor: pointer;
+}
+
 @media(min-width:992px){
     .pub-container > .details{
         display: none;
@@ -81,6 +86,18 @@
         transition: 0.2s all;
         display:block;
     }
+}
+
+.header{
+    position: absolute;
+    margin: 2rem;
+    color: #f8f9fa;
+    z-index: 1000;
+}
+
+.header>.back{
+    cursor: pointer;
+    border-radius: 100%;
 }
 
 @media(max-width:991px){
