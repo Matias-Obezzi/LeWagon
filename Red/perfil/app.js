@@ -122,5 +122,5 @@ function getParameter(param){
 }
 
 function redirectHome(){
-    window.location.replace('/')
+    window.location.replace('/LeWagon/Red')
 }
