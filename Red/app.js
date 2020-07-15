@@ -84,5 +84,5 @@ function setPosts(){
 }
 
 function redirectProfile(id){
-    window.location.replace('LeWagon/Red/perfil/?user='+id);
+    window.location.replace('/LeWagon/Red/perfil/?user='+id);
 }
