@@ -1,0 +1,20 @@
+.avatar{
+    width: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: 0.2s all;
+}
+
+.avatar-border{
+    border: 2px solid white;
+    width: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: 0.2s all;
+}
+
+.avatar:hover, .avatar-border:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transition: 0.2s all;
+}

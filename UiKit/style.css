@@ -1,0 +1,50 @@
+@import url(components/menu.css);
+@import url(components/avatar.css);
+@import url(components/banner.css);
+@import url(components/button.css);
+@import url(components/card-category.css);
+@import url(components/card-product.css);
+@import url(components/card-trip.css);
+@import url(components/footer.css);
+@import url(components/search-form.css);
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+}
+
+.link{
+    color: rgba(255,255,255,0.50);
+}
+
+.link{
+    color: rgba(255,255,255,1);
+}
+
+.scrollspy{
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.25)!important;
+    color: white;
+    border-color: unset;
+}
+
+.list-group-item, .list-group-item:last-child, .list-group-item:first-child{
+    background: none;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}

@@ -1,0 +1,42 @@
+.menu{
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+.menu-title{
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-title:hover{
+    background-color: rgba(255, 255, 255, 0.25);    
+    color: rgba(255, 255, 255, 1);
+    transition: 0.0s all;
+}
+
+.fas{
+    transition: 0.2s all;
+}
+
+.collapsed > .fas{
+    transform: rotate(180deg) !important;
+}
+
+.collapsed{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.collapsed:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-link{
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-link:hover{
+    background-color: rgba(255, 255, 255, 0.25)!important;
+    color: white;
+}

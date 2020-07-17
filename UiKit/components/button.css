@@ -1,0 +1,83 @@
+.btn-pill{
+    width: auto;
+    background:rgba(0, 0, 0, 0.5);
+    color:white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    transition: color background-color 0.2s all;
+}
+
+.btn-pill:hover{
+    width: auto;
+    background:rgba(0, 0, 0, 1);
+    color: white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    transition: color background-color 0.2s all;
+}
+
+.btn-outline-pill{
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #f8f9fa;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    transition: color background-color 0.2s all;
+}
+
+.btn-outline-pill:hover{
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background:rgba(0, 0, 0, 1);
+    color: white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    transition: color background-color 0.2s all;
+}
+
+.btn-flat{
+    width: auto;
+    background-color: #62c91d;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0;
+    transition: color background-color 0.2s all;
+}
+
+.btn-flat:hover{
+    color: white;
+    background-color: #55ac1b;
+    transition: color background-color 0.2s all;
+}
+
+.btn-gradient{
+    width: auto;
+    background: #8e2de2;
+    background: linear-gradient(90deg,#4a00e0,#8e2de2);
+    color: white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0;
+    transition: color background 0.2s all;
+}
+
+.btn-gradient:hover{
+    color: white;
+    background: rgb(42, 0, 126);
+    background: linear-gradient(90deg,rgb(42, 0, 126),rgb(108, 36, 172));
+    transition: color background 0.2s all;
+}
+

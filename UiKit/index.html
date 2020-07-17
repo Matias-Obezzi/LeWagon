@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Hello, world!</title>
+    </head>
+    <body class="bg-light">
+
+        <div class="row mx-auto px-0">
+            <div class="fixed-top sticky-lg-top col-xl-2 col-12 py-2 mx-2">
+                <div class="menu d-flex flex-column bg-dark p-2 mx-0">
+                    <div class="mx-0 p-0">
+                        <a class="list-group-item menu-title font-weight-bold text-right" type="button" data-toggle="collapse" data-target="#componentes" aria-expanded="true" aria-controls="componentes">
+                            <p class="my-0 float-left d-inline-block">
+                                Componentes
+                            </p>
+                            <i class="fas fa-chevron-up ml-3 my-auto"></i>
+                        </a>
+                        <div class="collapse show mx-2 list-group" id="componentes">
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#banner">Banner</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#button">Button</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#card-category">Card category</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#card-product">Card product</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#card-trip">Card trip</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#footer">Footer</a>
+                            <a class="menu-element menu-link list-group-item list-group-item-action" href="#search-form">Search form</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col px-5 py-lg-2 pt-5 pb-2 scrollspy" data-spy="scroll" data-target="#componentes" data-offset="0">
+                <div id="intro" class="mb-3">
+                    <h1 class="my-0">Ui Kit de Matías Obezzi</h1>
+                    <p class="my-0">
+                        Diseñado para el curso "Introducción a la programación" de Le Wagon
+                    </p>
+                </div>
+                <div id="banner" class="my-5">
+                    <h2 class="font-weight-bold">Banner</h2>
+                    <div class="banner shadow" style="background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.25)), url(https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+                        <div class="container text-white">
+                            <h1>Título del banner</h1>
+                            <p>Descripción del banner</p>
+                            <button class="btn btn-flat">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="button" class="my-5">
+                    <h2 class="font-weight-bold">Button</h2>
+                    <div class="row mx-0 ">
+                        <button class="btn btn-pill mr-2 shadow">
+                            btn-pill
+                        </button>
+                        <button class="btn btn-outline-pill mr-2 shadow">
+                            btn-outline-pill
+                        </button>
+                        <button class="btn btn-flat mx-2 shadow">
+                            btn-flat
+                        </button>
+                        <button class="btn btn-gradient mx-2 shadow">
+                            btn-gradient
+                        </button>
+                    </div>
+                </div>
+                <div id="card-category" class="my-5">
+                    <h2 class="font-weight-bold">Card category</h2>
+                    <div class="card-category shadow" style="background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.25)), url(https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1035&q=80);">
+                        <h1>Food</h1>
+                    </div>
+                </div>
+                <div id="card-product" class="my-5">
+                    <h2 class="font-weight-bold">Card product</h2>
+                    <div class="card-product shadow">
+                        <img class="img-card-product" src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=669&q=80"/>
+                        <div class="content-card-product">
+                            <div class="data">
+                                <h2 class="title">Título card product</h2>
+                                <p class="description">Descripción del producto con <b style="text-decoration: underline;">información llamativa</b></p>
+                            </div>
+                            <button class="btn btn-flat">Go</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-trip" class="my-5">
+                    <h2 class="font-weight-bold">Card trip</h2>
+                    <div class="card-trip shadow">
+                        <img class="img-card-trip" src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=669&q=80"/>
+                        <div class="content-card-trip">
+                            <div>
+                                <h2 class="title">Título card trip</h2>
+                                <p class="description">Descripción del tripo con <b style="text-decoration: underline;">información llamativa</b></p>
+                            </div>
+                            <p class="price">
+                                $499.99
+                            </p>
+                            <img class="user-card-trip avatar-border" src="https://images.unsplash.com/photo-1521117660421-ce701ed42966?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1080" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="footer" class="my-5">
+                    <h2 class="font-weight-bold">Footer</h2>
+                    <div class="footer shadow">
+                        <div class="footer-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="footer-copyright">
+                            Hecho con <i class="fas fa-heart"></i> por <span class="author">Matías Obezzi</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-form" class="my-5">
+                    <h2 class="font-weight-bold">Search form</h2>
+                    <form novalidate="novalidate" class="search shadow" action="/" accept-charset="UTF-8" method="get">
+                        <div class="search-form-control form-group">
+                            <input class="form-control string required" type="text" name="search" id="search" placeholder="Ingrese su busqueda" />
+                            <button name="button" type="submit" class="btn btn-gradient">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="footer" class="my-5">
+                <h2 class="font-weight-bold">Footer</h2>
+                <div class="footer shadow">
+                    <div class="footer-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="footer-copyright">
+                        Hecho con <i class="fas fa-heart"></i> por <span class="author">Matías Obezzi</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>

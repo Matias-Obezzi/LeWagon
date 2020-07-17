@@ -1,0 +1,36 @@
+.footer{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .footer-links{
+    width: auto;
+}
+
+.footer .footer-links a{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #6c757d!important;
+    transition: 0.2s all;
+}
+
+.footer .footer-links a:hover{
+    color: black!important;
+    transition: 0.2s all;
+}
+
+.footer .footer-copyright{
+    width: auto;
+    color: #6c757d!important;
+}
+
+.footer .footer-copyright .author{
+    font-weight: bold;
+}
+
+.footer .footer-copyright .fa-heart{
+    width: auto;
+    color: red;
+}
