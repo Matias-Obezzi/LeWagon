@@ -40,3 +40,23 @@
     background-color: rgba(255, 255, 255, 0.25)!important;
     color: white;
 }
+
+.list-group-item.active {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.25)!important;
+    color: white;
+    border-color: unset;
+    margin: 2px 0 !important;
+}
+
+.list-group-item, .list-group-item:last-child, .list-group-item:first-child{
+    margin: 2px 0;
+    background: none;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}

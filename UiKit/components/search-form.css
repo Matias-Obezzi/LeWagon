@@ -1,3 +1,7 @@
+.search{
+    border-radius: .25rem !important;
+}
+
 .search-form-control {
     position: relative;
 }
@@ -20,4 +24,9 @@
     border: 1px solid #4a00e0;
     outline: none !important;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.search-form-control .btn:hover{
+    transform: translateY(0);
+    box-shadow: none !important;
 }

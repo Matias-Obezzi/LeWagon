@@ -81,3 +81,12 @@
     transition: color background 0.2s all;
 }
 
+.btn{
+    transition:0.2s all;
+}
+
+.btn:hover{
+    transition:0.2s all;
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}

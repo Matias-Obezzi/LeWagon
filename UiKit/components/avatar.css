@@ -1,4 +1,5 @@
 .avatar{
+    padding: 0;
     width: 60px;
     border-radius: 50px;
     object-fit: cover;
@@ -6,6 +7,7 @@
 }
 
 .avatar-border{
+    padding: 0;
     border: 2px solid white;
     width: 60px;
     border-radius: 50px;
@@ -14,7 +16,38 @@
 }
 
 .avatar:hover, .avatar-border:hover{
+    padding: 0;
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transition: 0.2s all;
+}
+
+.avatar:hover ~ .b-avatar .badge, .avatar-border:hover ~ .b-avatar .badge{
+    transform: translateY(-5px);
+    transition: 0.2s all;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.avatar-badge, .avatar-border-badge{
+    display: flex;
+    width: 60px;
+}
+
+.avatar-badge .b-avatar, .avatar-border-badge .b-avatar{
+    transition: 0.2s all;
+    position: relative;
+    left: -1.1rem;
+}
+
+.avatar-border-badge .b-avatar .badge{
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.2s all;
+    border: 2px white solid;
+}
+
+.avatar-badge .b-avatar .badge{
+    font-size: 15px;
+    border-radius: 50px;
     transition: 0.2s all;
 }
