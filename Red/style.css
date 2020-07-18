@@ -168,3 +168,23 @@
         }
     }
 }
+
+.footer .footer-copyright .author{
+    font-weight: bold;
+    color: black;
+    opacity: 0.7;
+    transition: 0.2s all;
+    text-decoration: none;
+}
+
+.footer .footer-copyright .author:hover{
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+    transition: 0.2s all;
+}
+
+.footer .footer-copyright .fa-heart{
+    width: auto;
+    color: red;
+}

@@ -29,8 +29,8 @@
                             <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#card-category">Card category</a>
                             <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#card-product">Card product</a>
                             <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#card-trip">Card trip</a>
-                            <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#footer">Footer</a>
                             <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#search-form">Search form</a>
+                            <a onclick="closeMenu()" class="menu-link list-group-item list-group-item-action" href="#footer">Footer</a>
                         </div>
                         <script>
                             function closeMenu(){
@@ -147,6 +147,27 @@
                         </div>
                     </div>
                 </div>
+                <div id="search-form" class="my-5">
+                    <h2 class="font-weight-bold">Search form</h2>
+                    <form novalidate="novalidate" class="search shadow" action="/" accept-charset="UTF-8" method="get">
+                        <div class="search-form-control form-group">
+                            <input class="form-control string required" type="text" name="search" id="search" placeholder="Ingrese su busqueda" />
+                            <button id="submit-form" type="submit" class="btn btn-gradient" disabled>
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                    <script>
+                        const search = document.getElementById("search");
+                        search.addEventListener("input",function(){
+                            if(search.value.length == 0){ 
+                                document.getElementById("submit-form").setAttribute("disabled", true);
+                            }else{
+                                document.getElementById("submit-form").removeAttribute("disabled");
+                            }
+                        })
+                    </script>
+                </div>
                 <div id="footer" class="my-5">
                     <h2 class="font-weight-bold">Footer</h2>
                     <div class="footer shadow">
@@ -162,17 +183,6 @@
                             Hecho con <i class="fas fa-heart"></i> por <a href="#" class="author">Matías Obezzi</a>
                         </div>
                     </div>
-                </div>
-                <div id="search-form" class="my-5">
-                    <h2 class="font-weight-bold">Search form</h2>
-                    <form novalidate="novalidate" class="search shadow" action="/" accept-charset="UTF-8" method="get">
-                        <div class="search-form-control form-group">
-                            <input class="form-control string required" type="text" name="search" id="search" placeholder="Ingrese su busqueda" />
-                            <button type="submit" class="btn btn-gradient">
-                                <i class="fas fa-search"></i> Search
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
