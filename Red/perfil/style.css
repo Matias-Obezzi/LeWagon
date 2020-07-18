@@ -91,13 +91,23 @@
 .header{
     position: absolute;
     margin: 2rem;
-    color: #f8f9fa;
     z-index: 1000;
 }
 
 .header>.back{
     cursor: pointer;
     border-radius: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    background: rgba(0,0,0,.15);
+    transition: 0.2s all;
+    color: rgba(248, 249, 250);
+    opacity: 0.75;
+}
+
+.header>.back:hover{
+    transform: translateY(-5px);
+    transition: 0.2s all;
+    opacity: 1;
 }
 
 @media(max-width:991px){
