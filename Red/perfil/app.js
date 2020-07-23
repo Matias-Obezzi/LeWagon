@@ -124,3 +124,10 @@ function getParameter(param){
 function redirectHome(){
     window.location.replace('/LeWagon/Red')
 }
+
+function messageLength(){
+    let message = document.getElementById("message-text").value;
+    let cant = message.length;
+    document.getElementById("length").innerHTML = cant;
+    document.getElementById("send-button").disabled = message.trim().length==0;
+}
