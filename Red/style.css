@@ -123,7 +123,22 @@
 .footer .footer-copyright .fa-heart{
     width: auto;
     color: red;
+    transition: 0.2s all;
+    animation: heart 2s infinite;
 }
+
+@keyframes heart{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 @keyframes fade-in{
     from{
         opacity: 0;

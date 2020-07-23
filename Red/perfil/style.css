@@ -27,7 +27,7 @@
     border: 5px solid #f8f9fa;
     margin-top: -10rem;
     transition: 0.5s all;
-    min-width: 232px;
+    /* min-width: 200px; */
 }
 
 .img-profile:hover{
@@ -39,7 +39,7 @@
 }
 
 .profile-card{
-    top: -25rem;
+    margin-top: -50vh;
     position: relative;
 }
 
@@ -71,7 +71,7 @@
     .pub-container > .details{
         display: none;
         position: relative;
-        margin-top: -50%;
+        margin-top: -50%;   
         font-size: 25px;
         z-index: 1000;
         cursor: pointer;
