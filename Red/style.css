@@ -234,3 +234,17 @@
         }
     }
 }
+
+.navbar-toggler[aria-expanded="true"] > .navbar-toggler-icon{
+    transform: rotate(-90deg);
+    transition: 0.2s all;
+}
+
+.navbar-toggler-icon{
+    transition: 0.2s all;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+    outline: none!important;
+    box-shadow: none;
+}
