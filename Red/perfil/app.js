@@ -121,10 +121,6 @@ function getParameter(param){
     return urlParams.get(param);
 }
 
-function redirectHome(){
-    window.location.replace('/LeWagon/Red')
-}
-
 function messageLength(){
     let message = document.getElementById("message-text").value;
     let cant = message.length;

@@ -5,6 +5,7 @@
 }
 .link{
     color: unset;
+    text-decoration: none;
 }
 
 .link:hover{
