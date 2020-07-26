@@ -50,7 +50,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background: url("https://source.unsplash.com/collection/8994315/1080x1080");
+    background:  linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.25)), url("https://source.unsplash.com/collection/8994315/1080x1080");
     background-size: cover;
     color: white;
     text-shadow: 1px 1px 5px black;
